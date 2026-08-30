@@ -19,7 +19,7 @@ jobs:
         with:
           go-version: "1.26.0"
 
-      - name: Activate Go
+      - name: Go activation
         run: go version
 
 
