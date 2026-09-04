@@ -21,9 +21,8 @@ jobs:
       - name: Go activation
         run: go test -cover
 
-     
       - name: Install gosec
-        run: go install github.com/securego/gosec/v2/cmd/go>
+        run: go install github.com/securego/gosec/v2/cmd/go
 
       - name: gosec check
         run: gosec ./...
