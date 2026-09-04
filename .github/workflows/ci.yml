@@ -1,4 +1,3 @@
-import lookup disabled by -mod=vendor
 name: ci
 
 on:
@@ -23,7 +22,7 @@ jobs:
         run: go test -cover
 
       - name: Install gosec
-        run: go install github.com/securego/gosec/v2/cmd/go
+        run: go install github.com/securego/gosec/v2/cmd/gosec@latest
 
       - name: gosec check
         run: gosec ./...
