@@ -3,7 +3,7 @@ name: ci
 on:
   push:
     branches: [main]
-job:
+jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
